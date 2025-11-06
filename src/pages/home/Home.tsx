@@ -1,4 +1,4 @@
-import BarChartBox from "../../barChartBox/BarChartBox";
+import BarChartBox from "../../components/barChartBox/BarChartBox";
 import ChartBox from "../../components/chartBox/ChartBox";
 import TopBox from "../../components/topBox/TopBox";
 import {
