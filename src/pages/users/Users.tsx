@@ -60,7 +60,7 @@ function Users() {
         <h1>Users</h1>
         <button onClick={() => setOpenModal(true)}>Add user</button>
       </div>
-      <DataTable slug="user" columns={columns} rows={userRows} />
+      <DataTable slug="users" columns={columns} rows={userRows} />
       {openModal && (
         <Add slug="user" columns={columns} setOpen={setOpenModal} />
       )}
