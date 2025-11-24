@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
+# React Admin Panel UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and customizable **Admin Panel UI** built with **React**, **TypeScript**, **Vite**, **MUI**, **React Router**, **Recharts**, and **TanStack Query**.
+This project serves as a clean and scalable starter template for dashboards, analytics platforms, internal tools, or SaaS admin panels.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+### 🖥️ Admin Dashboard
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Overview widgets
+* Recharts-powered analytics and visualizations
+* Responsive layout
 
-## Expanding the ESLint configuration
+### 📋 Data Management
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* MUI Data Grid for structured data tables
+* Sorting, pagination, filtering (depending on your configuration)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🔄 API Data Handling
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Powered by **@tanstack/react-query**
+* Automatic caching, refetching, and async state management
+* React Query Devtools included for debugging
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 🧭 Navigation
+
+* React Router v7 for routing and screens
+* Layout-based UI structure (sidebar, navbar, content)
+
+### 🎨 UI & Styling
+
+* MUI v7 components
+* Emotion for styling
+* Sass support for custom styles
+
+### ⚡ Developer Experience
+
+* Vite for lightning-fast development
+* TypeScript for typing
+* ESLint configured for consistent code quality
+* Hot reloading support
+
+---
+
+## 🚀 Tech Stack
+
+**Frontend**
+
+* React 19
+* TypeScript
+* Vite
+* React Router DOM 7
+* MUI (Material UI) + Emotion styling
+* Recharts for charts
+* TanStack React Query
+* Sass + Sass Embedded
+
+**Tooling**
+
+* ESLint + TypeScript ESLint
+* React Refresh
+* Vite Plugin React
+
+---
+
+## 🛠️ Scripts
+
+| Command           | Description                  |
+| ----------------- | ---------------------------- |
+| `npm run dev`     | Start development server     |
+| `npm run build`   | Build the app for production |
+| `npm run preview` | Preview the production build |
+| `npm run lint`    | Run ESLint validation        |
+
+---
+
+## 📦 Installation
+
+Clone the repo:
+
+```bash
+git clone https://github.com/plinadev/react-admin-panel-ui
+cd react-admin-panel-ui
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+Start dev server:
+
+```bash
+npm run dev
+```
+
+---
